@@ -1,5 +1,6 @@
 import discord
 import argparse
+from selenium import webdriver
 
 class Assistant(discord.Client):
     def __init__(self, channel):
@@ -45,3 +46,9 @@ else:
 
 lp_assistant = Assistant(channel)
 lp_assistant.run(args.token)
+
+#DRIVER = "chromedriver"
+#driver = webdriver.Chrome(DRIVER)
+#driver.get('https://www.spotify.com')
+#screenshot = driver.save_screenshot('my_screenshot.png')
+#driver.quit()
